@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} md:flex`}>
+      <body className={inter.className}>
         <QuioscoProvider>
           {children}
         </QuioscoProvider>
