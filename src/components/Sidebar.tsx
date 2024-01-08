@@ -1,10 +1,22 @@
 import Image from "next/image";
+import CategoriaList from "./CategoriaList";
+
+const Sidebar: React.FC = () => {
 
 
-export default function Sidebar() {
     return (
         <>
-            <Image width={200} height={200} src='/assets/img/logo.svg' alt="Logo image" className="w-48 h-auto" priority/>
+            <Image
+                width={200}
+                height={200}
+                src='/assets/img/logo.svg'
+                alt="Logo image"
+                className="w-48 h-auto mx-auto"
+                priority
+            />
+            <CategoriaList />
         </>
     )
 }
+
+export default Sidebar;
